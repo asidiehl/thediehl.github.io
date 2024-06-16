@@ -36,7 +36,7 @@ jobs:
         run: npx next build
 
       - name: debug pwd
-        run: pwd && ls -a
+        run: pwd && ls -a .next/
 
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
