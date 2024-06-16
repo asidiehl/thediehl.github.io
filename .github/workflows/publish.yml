@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - debug
 
 permissions:
   contents: read
@@ -31,6 +32,9 @@ jobs:
 
       - name: Build static Next.js site
         run: npx next build
+
+      - name: debug pwd
+        run: pwd && ls -a
 
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
