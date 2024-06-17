@@ -34,3 +34,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Secureli-generated files (do not modify):
+.secureli/logs
+.secureli/repo-config.yaml
+# End Secureli-generated files
