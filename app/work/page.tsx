@@ -1,22 +1,13 @@
-"use client"
 import Image from "next/image";
 import {Header} from "../../components/header"
-import {Component} from "../../components/collapsible"
 
-const UnoptimizedImage = (props) => {
-  return <Image {...props} unoptimized />
-}
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between ">
-      <style jsx global>{`
-        body {
-          background: "antiquewhite"};
-        }
-      `}</style>
       
-      {/* <UnoptimizedImage
+      {/* <Image
+        unoptimized
         src="/work_bg.png"
         alt="Alex at Work"
         fill
@@ -28,7 +19,7 @@ export default function Home() {
       /> */}
 
       <Header
-        page="work"
+        path="work"
       />
 
       
