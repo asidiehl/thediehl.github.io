@@ -91,6 +91,8 @@ jobs:
     needs: deploy
     steps:
       - name: Install pre-requisites
-        run: sudo apt install -y curl
+        run: sudo apt-get install -y curl
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Test deployed pages
         run: ./scripts/e2e.sh
