@@ -91,6 +91,6 @@ jobs:
     needs: deploy
     steps:
       - name: Install pre-requisites
-        run: apt install -y curl
+        run: sudo apt install -y curl
       - name: Test deployed pages
         run: ./scripts/e2e.sh
