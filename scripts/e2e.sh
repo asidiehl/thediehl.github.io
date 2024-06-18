@@ -13,7 +13,7 @@ echo "Test page endpoints"
 
 for page in $(echo $pages)
 do
-  $url="https://$domain/$page"
+  url="https://$domain/$page"
   return_code=$(curl -s -o /dev/null -w "%{http_code}" $url)
   echo "/$page returned $return_code"
   if [ $return_code != "200" ]
