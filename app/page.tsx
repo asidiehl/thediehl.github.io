@@ -65,11 +65,20 @@ export default function Home() {
                 <Image
                   unoptimized
                   src="/download.svg"
-                  alt="Downlad my resume"
+                  alt="Download my resume"
                   width="20"
                   height="20"
                 />{' '}
                 Resume
+              </a>
+              <a
+                className="flex gap-x-2 rounded-full border-2 bg-none px-4 py-2 text-sm font-medium text-white
+              ring-offset-gray-700/80 hover:bg-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2
+              sm:text-base"
+                href="mailto:alex@thediehl.io" // disable-pii-scan
+              >
+                {' '}
+                Contact
               </a>
             </div>
           </div>

@@ -16,7 +16,19 @@ export default function Home() {
         }}
       />
 
-      <Header path="work" />
+      <Header path="home" />
+
+      {/* TODO: Add stuff
+            - Home lab
+              - Diagrams
+              - Servers
+                - aggron + ipmi
+                - substation
+              - Services
+              - Camera network
+            - 3D printers
+            - Motocamping
+      */}
 
       <div className="relative flex h-screen w-full items-center justify-center">
         <div className="z-10  max-w-screen-lg px-4 lg:px-0">
